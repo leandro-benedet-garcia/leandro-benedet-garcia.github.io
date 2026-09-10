@@ -1,0 +1,4 @@
+Sitemap: https://leandro-benedet-garcia.github.io/portfolio/sitemap.xml
+
+User-agent: *
+Disallow:
