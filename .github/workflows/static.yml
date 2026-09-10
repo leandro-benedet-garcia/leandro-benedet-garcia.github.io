@@ -55,12 +55,6 @@ jobs:
         with:
           path: '_site/'
 
-      - name: Output stats
-        run: |
-          echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
-          echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
-          echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
-
   deploy:
     needs: build
     if: github.ref == 'refs/heads/main'   # Only deploy from main, not PRs
