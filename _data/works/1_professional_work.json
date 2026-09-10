@@ -1,0 +1,84 @@
+{
+  "id": "professional-work",
+  "title": "Gameplay Engineering",
+  "description": "Projects that I worked on for clients as a contractor and launched by them",
+  "single_column": false,
+  "items": [
+    {
+      "id": "exosky",
+      "cover": "/assets/images/games/exosky/cover.jpg",
+      "imagebar": {
+        "videos": [
+          {
+            "url": "/assets/images/games/exosky/physics.webm",
+            "autoplay": true
+          },
+          {
+            "url": "/assets/images/games/exosky/flight.webm",
+            "autoplay": true
+          }
+        ]
+      },
+      "title": "Exosky",
+      "client": {
+        "name": "Elevons, LLC",
+        "url": "https://elevons.design"
+      },
+      "role": "Lead Dev",
+      "objective": "Create a realistic flight simulation that is performant and as close to real life as possible",
+      "delivered": "Created a flight simulation in Unity that is easy for the client to extend. Easy to mod by players and worked with more than 16 planes at the same time at more than 60 FPS on a 4th generation core i5 CPU (a CPU from 2013).",
+      "subtitle": "Aerodynamics, Physics Programming & Engine Optimization",
+      "work_done": [
+        "Implemented and refined the core flight-simulation equations together with a flight engineer.",
+        "Managed the git repository and reviewed code from 3 other programmers to ensure code quality was maintained and functional.",
+        "Integrated F-MOD into the game for better SFX in general",
+        "Created a modding system that allowed users to edit and add completely custom airplanes into the game, without the need to even restart the game."
+      ],
+      "where_to_play": [
+        {
+          "url": "https://store.steampowered.com/app/2795160/Exosky/",
+          "icon": "/assets/images/icons/steam.svg",
+          "name": "Steam"
+        }
+      ]
+    },
+    {
+      "id": "sluttybass",
+      "cover": "/assets/images/games/slutty_bass/cover.jpg",
+      "imagebar": {
+        "images": [
+          "/assets/images/games/slutty_bass/beach.png",
+          "/assets/images/games/slutty_bass/crystal.png"
+        ]
+      },
+      "title": "Slutty Bass",
+      "client": {
+        "name": "Marrow Tap",
+        "url": "https://marrow-tap.com"
+      },
+      "role": "Lead Dev",
+      "objective": "Create an advergame for a musician album under 3 weeks.",
+      "delivered": "Created an action platformer using Corgi Engine.",
+      "subtitle": "State Machine Architecture & Modular AI Systems",
+      "work_done": [
+        "Managed the git repository and reviewed code from 5 other programmers to ensure code quality was maintained and functional.",
+        "Managed and reviewed tasks related to coding.",
+        "Created AI for bosses and enemies.",
+        "Imported and implemented animations made by artists.",
+        "Created an iPhone build without a Mac device, created purely with GitHub Actions using Fastly (to handle code signage) and the MacOs hosted runner."
+      ],
+      "where_to_play": [
+        {
+          "url": "https://sluttybass.itch.io/slutty-bass",
+          "icon": "/assets/images/icons/itchio.svg",
+          "name": "Itch.io"
+        },
+        {
+          "url": "https://apps.apple.com/br/app/slutty-bass/id6763365051",
+          "icon": "/assets/images/icons/appstore.svg",
+          "name": "Apple APP Store"
+        }
+      ]
+    }
+  ]
+}

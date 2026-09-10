@@ -1,0 +1,28 @@
+{
+  "id": "gameplay-prototypes",
+  "title": "Gameplay Prototypes",
+  "single_column": false,
+  "description": "Projects that I worked on very specific things but are not full games",
+  "items": [
+    {
+      "id": "multiplayerbuilding",
+      "highlight_video": "/assets/images/games/multiplayer_builder/multiplayer.mp4",
+      "cover": "/assets/images/games/multiplayer_builder/building.png",
+      "title": "Multiplayer Building Game",
+      "imagebar": {},
+      "client": {
+        "name": "Daek"
+      },
+      "role": "Developer",
+      "subtitle": "Server-Authoritative Netcode & NPC Decision Trees",
+      "work_done": [
+        "Created a multiplayer system where multiple people could build in the same town.",
+        "Made a voting system where players could vote on what the NPCs would prioritize in building and doing.",
+        "Created a building system where players could place buildings if the town had the available resources in storage buildings.",
+        "Created an AI system where NPCs could automatically pathfind where resources are stored and moved to where they could build.",
+        "Used LimboAI to make a decision tree where NPCs controlled themselves based on the priority system.",
+        "Created a full authoritative dedicated server made with C# and JavaScript with database access."
+      ]
+    }
+  ]
+}

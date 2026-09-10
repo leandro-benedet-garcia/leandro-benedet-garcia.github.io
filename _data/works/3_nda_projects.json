@@ -1,0 +1,52 @@
+{
+  "id": "nda-projects",
+  "single_column": true,
+  "title": "NDA projects",
+  "description": "Projects that I worked on, but are only used internally in corporations or aren't public and my contract only allows me to talk about some things, without showing details",
+  "items": [
+    {
+      "id": "digitaltwin",
+      "title": "Digital Twin",
+      "client": {
+        "name": "Ernst & Young (EY)",
+        "url": "https://ey.com"
+      },
+      "role": "Senior Developer",
+      "objective": "Create a clone of a real-life building and create a virtual copy where employees from a large energy company could log in and perform general tasks",
+      "subtitle": "What I did in the project",
+      "work_done": [
+        "Managed the git repository and reviewed code from 3 other programmers to make sure the code quality maintained consistent and functional.",
+        "Created VR system using VR Interaction Framework to be used with Oculus Quest 2",
+        "Made sure the project worked with and without VR with the same codebase, allowing it to be functional even on the web by simply exporting to different platforms."
+      ]
+    },
+    {
+      "id": "vrshowcase",
+      "title": "VR showcase",
+      "client": {
+        "name": "Ernst & Young (EY)",
+        "url": "https://ey.com"
+      },
+      "role": "Senior Developer",
+      "objective": "Update an older project to add further features to it, it was made using Meta XR SDK for Unity",
+      "subtitle": "What I did in the project",
+      "work_done": [
+        "Managed the git repository and reviewed code from 3 other programmers to make sure the code quality was maintained consistently and functionally.",
+        "Maintained existing codebase by fixing bugs.",
+        "Created an interactive tutorial on how the showcase worked, focused on people that never used VR before."
+      ]
+    },
+    {
+      "id": "physics-procedural",
+      "title": "Physics and Procedural Game",
+      "role": "Developer",
+      "objective": "Create a 2D game from scratch with procedural level generation and a physics-based character controller.",
+      "subtitle": "What I did in the project",
+      "work_done": [
+        "Worked on pathfinding of a flying enemy controlled by physics.",
+        "Created a physics-based flying character controller.",
+        "Created a procedural level generator utilizing TileMapLayers."
+      ]
+    }
+  ]
+}

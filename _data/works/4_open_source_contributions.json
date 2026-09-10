@@ -1,0 +1,32 @@
+{
+  "id": "opensource-contributions",
+  "title": "Open Source Contributions",
+  "single_column": true,
+  "description": "Open Source projects that I collaborated on",
+  "items": [
+    {
+      "id": "godot",
+      "cover": "/assets/images/games/personal/godot.svg",
+      "title": "Godot Engine",
+      "description": "<p>I am a contributor with several pull requests; see a list of my <a target='_blank' rel='noopener' href='https://github.com/search?q=org%3Agodotengine%20author%3Aleandro-benedet-garcia%20is%3Apr%20is%3Amerged&amp;type=pullrequests'>merged pull requests on the official Godot GitHub Repository</a>.</p>",
+      "subtitle": "Contribution list",
+      "work_done": [
+        "Worked on improving documentation in general, in-class references and documentation itself.",
+        "Fixed bugs."
+      ]
+    },
+    {
+      "id": "panda3d",
+      "cover": "/assets/images/games/personal/panda3d.svg",
+      "title": "Panda3D",
+      "description": "<p>I contributed with a couple of pull requests; a list of merged pull requests can be seen <a target='_blank' rel='noopener' href='https://github.com/search?q=org%3Apanda3d+author%3Aleandro-benedet-garcia+is%3Apr&amp;type=pullrequests'>clicking here</a> (Some merged PRs are marked as closed, but they were merged).</p>",
+      "subtitle": "Contribution list",
+      "work_done": [
+        "Made it possible for the engine to be compiled in MinGW",
+        "Made it possible for the engine to be compiled in Clang with MinGW64",
+        "Created unit tests",
+        "Created additional functions"
+      ]
+    }
+  ]
+}
