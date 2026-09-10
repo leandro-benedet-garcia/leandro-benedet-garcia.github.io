@@ -23,3 +23,6 @@ email: leandro.benedet.garcia@gmail.com
 description: >-
   Senior Gameplay Engineer with 13+ years of coding experience. Specializing in multiplayer, physics, VR and core game systems using Unity (C#), Godot (GDScript, C# and C++).
 github_username:  leandro-benedet-garcia
+
+plugins:
+  - jekyll-sitemap

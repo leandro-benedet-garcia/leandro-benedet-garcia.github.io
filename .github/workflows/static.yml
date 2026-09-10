@@ -42,20 +42,13 @@ jobs:
           bundler-cache: true
 
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
 
       - name: Build Jekyll site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-
-      - name: Generate the sitemap
-        id: sitemap
-        uses: cicirello/generate-sitemap@v1
-        with:
-          base-url-path: https://leandro-benedet-garcia.github.io/
-          exclude-paths: /preview.html /main_menu.html
-          path-to-root: _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
