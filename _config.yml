@@ -18,6 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+url: "https://leandro-benedet-garcia.github.io"
+baseurl: ""
 title: Leandro Benedet Garcia - Senior Gameplay Engineer | Unity, Godot, Multiplayer & VR
 email: leandro.benedet.garcia@gmail.com
 description: >-
