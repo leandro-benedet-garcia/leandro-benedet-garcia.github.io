@@ -68,10 +68,6 @@ jobs:
           echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
           echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
-
   deploy:
     needs: build
     if: github.ref == 'refs/heads/main'   # Only deploy from main, not PRs
