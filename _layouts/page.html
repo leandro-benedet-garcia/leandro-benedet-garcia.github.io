@@ -8,117 +8,130 @@
   <meta name="author" content="Leandro Benedet Garcia" />
   <meta name="google-site-verification" content="XI4ug2qWmXqyj7JrxbFe24N7PtI1mn523HtDhDaj7Go" />
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet" />
-  <link rel="canonical" href="https://leandro-benedet-garcia.github.io{{ page.permalink }}" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
   <!-- Primary Meta Tags -->
-  <title>{{ site.title }}</title>
-  <meta name="title" content="{{ site.title }}" />
-  <meta name="description" content="{{ site.description }}" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="title" content="{{ page.title | default: site.title }}" />
+  <meta name="description" content="{{ page.description | default: site.description }}" />
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:url" content="https://leandro-benedet-garcia.github.io{{ page.permalink }}" />
-  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
-  <meta property="og:description" content="{{ site.description }}" />
-  <meta property="og:image" content="https://leandro-benedet-garcia.github.io/assets/images/x_preview.png" />
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:description" content="{{ page.description | default: site.description }}" />
+  <meta property="og:image" content="{{ '/assets/images/x_preview.png' | absolute_url }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Preview image for {{ site.title }}" />
+  <meta property="og:image:type" content="image/png" />
 
-  <!-- Twitter -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://leandro-benedet-garcia.github.io{{ page.permalink }}" />
-  <meta name="twitter:title" content="{{ site.title }}" />
-  <meta name="twitter:description" content="{{ site.description }}" />
-  <meta name="twitter:image" content="https://leandro-benedet-garcia.github.io/assets/images/x_preview.png" />
+  {% if site.twitter_username %}
+  <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+  {% endif %}
+  <meta name="twitter:url" content="{{ page.url | absolute_url }}" />
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}" />
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}" />
+  <meta name="twitter:image" content="{{ '/assets/images/x_preview.png' | absolute_url }}" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Favicon and theme -->
+  <link rel="icon" href="{{ '/assets/images/favicon.ico' | absolute_url }}" />
+  <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | absolute_url }}" />
+  <meta name="theme-color" content="#0d6efd" />
 
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="/assets/css/fontawesome.css" />
-  <link rel="stylesheet" href="/assets/css/templatemo-style.css" />
+  <!-- Styles (adjust paths if you publish under a repo subpath) -->
+  <link href="{{ '/vendor/bootstrap/css/bootstrap.min.css' | relative_url }}" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/assets/css/fontawesome.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/templatemo-style.css' | relative_url }}" />
+
+  <!-- Structured data (JSON-LD) -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "url": "https://leandro-benedet-garcia.github.io{{ page.permalink }}",
-  "mainEntity": {
-    "@type": "Person",
-    "@id": "https://leandro-benedet-garcia.github.io/#person",
-    "name": "Leandro Benedet Garcia",
-    "jobTitle": "Senior Gameplay Engineer",
-    "description": "{{ site.description }}",
-    "url": "https://leandro-benedet-garcia.github.io/",
-    "sameAs": [
-      "https://github.com/leandro-benedet-garcia",
-      "https://www.linkedin.com/in/leandrobgarcia/",
-      "https://codeberg.org/cerberus1746"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Freelance Gameplay Engineering Rates & Services",
-      "itemListElement": [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "{{ page.url | absolute_url }}",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "{{ '/' | absolute_url }}#person",
+      "name": "{{ site.author.name | default: 'Leandro Benedet Garcia' }}",
+      "jobTitle": "Senior Gameplay Engineer",
+      "description": "{{ page.description | default: site.description | escape }}",
+      "url": "{{ '/' | absolute_url }}",
+      "sameAs": [
+        "https://github.com/leandro-benedet-garcia",
+        "https://www.linkedin.com/in/leandrobgarcia/",
+        "https://codeberg.org/cerberus1746"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Freelance Gameplay Engineering Rates & Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Freelance Gameplay Engineering & Architecture Consulting",
+              "description": "Custom game mechanics implementation, physics optimization, server-authoritative multiplayer integration and engine tool programming."
+            },
+            "priceCurrency": "USD",
+            "description": "Contract engineering and software architecture services available on an hourly, milestone or per-project scope basis."
+          }
+        ]
+      },
+      "knowsAbout": [
+        "Gameplay Engineering",
+        "Multiplayer Network Architecture",
+        "Dedicated Server Systems",
+        "Server-Authoritative Netcode",
+        "Aerodynamics & Physics Replication",
+        "State Machine Architecture",
+        "Modular AI Systems",
+        "Godot Engine Development",
+        "Unity Game Development",
+        "C# Scripting",
+        "C++ Core Engine Systems",
+        "GDScript Prototyping",
+        "Docker Containerization"
+      ],
+      "seeks": {
+        "@type": "Demand",
+        "description": "Available for contract, freelance and full-time remote opportunities worldwide.",
+        "availabilityStarts": "2026-08-27",
+        "eligibleRegion": "Remote / Global"
+      },
+    "publishingPrinciples": [
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Freelance Gameplay Engineering & Architecture Consulting",
-            "description": "Custom game mechanics implementation, physics optimization, server-authoritative multiplayer integration and engine tool programming."
-          },
-          "priceCurrency": "USD",
-          "description": "Contract engineering and software architecture services available on an hourly, milestone or per-project scope basis."
+          "@type": "CreativeWork",
+          "name": "Exosky - 3D Flight Simulator",
+          "description": "Lead developer for a 3D flight simulator utilizing optimized, custom aerodynamics equations to run smoothly at over 60 FPS on 4th-gen i5 hardware.",
+          "keywords": "Unity, C#, Flight Simulation, Optimization"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Multiplayer Building Game",
+          "description": "Engineered a custom server-authoritative multiplayer sandbox structure using Godot dedicated server nodes and network replication.",
+          "keywords": "Godot, Dedicated Server, Netcode, Multiplayer"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Slutty Bass",
+          "description": "2D platformer using state machine mechanics and modular AI architectures.",
+          "keywords": "Unity, C#, Platformer"
         }
       ]
-    },
-    "knowsAbout": [
-      "Gameplay Engineering",
-      "Multiplayer Network Architecture",
-      "Dedicated Server Systems",
-      "Server-Authoritative Netcode",
-      "Aerodynamics & Physics Replication",
-      "State Machine Architecture",
-      "Modular AI Systems",
-      "Godot Engine Development",
-      "Unity Game Development",
-      "C# Scripting",
-      "C++ Core Engine Systems",
-      "GDScript Prototyping",
-      "Docker Containerization"
-    ],
-    "seeks": {
-      "@type": "Demand",
-      "description": "Available for contract, freelance and full-time remote opportunities worldwide.",
-      "availabilityStarts": "2026-08-27",
-      "eligibleRegion":"Remote / Global"
-    },
-    "publishingPrinciples": [
-      {
-        "@type": "CreativeWork",
-        "name": "Exosky - 3D Flight Simulator",
-        "description": "Lead developer for a 3D flight simulator utilizing optimized, custom aerodynamics equations to run smoothly at over 60 FPS on 4th-gen i5 hardware.",
-        "keywords": "Unity, C#, Flight Simulation, Optimization"
-      },
-      {
-        "@type": "CreativeWork",
-        "name": "Multiplayer Building Game",
-        "description": "Engineered a custom server-authoritative multiplayer sandbox structure using Godot dedicated server nodes and network replication.",
-        "keywords": "Godot, Dedicated Server, Netcode, Multiplayer"
-      },
-      {
-        "@type": "CreativeWork",
-        "name": "Slutty Bass",
-        "description": "2D platformer using state machine mechanics and modular AI architectures.",
-        "keywords": "Unity, C#, Platformer"
-      }
-    ]
+    }
   }
-}
-</script>
-
+  </script>
 </head>
 
 <body>
