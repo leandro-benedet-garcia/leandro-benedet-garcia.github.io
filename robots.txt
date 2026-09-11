@@ -1,6 +1,0 @@
-# https://leandro-benedet-garcia.github.io/
-
-User-agent: *
-Disallow:
-
-Sitemap: https://leandro-benedet-garcia.github.io/sitemap.xml
