@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="author" content="Leandro Benedet Garcia" />
   <meta name="google-site-verification" content="XI4ug2qWmXqyj7JrxbFe24N7PtI1mn523HtDhDaj7Go" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet" />
   <link rel="canonical" href="https://leandro-benedet-garcia.github.io{{ page.permalink }}" />
 
   <!-- Primary Meta Tags -->
@@ -17,19 +19,21 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:url" content="https://leandro-benedet-garcia.github.io{{ page.permalink }}" />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:description" content="{{ site.description }}" />
   <meta property="og:image" content="https://leandro-benedet-garcia.github.io/assets/images/x_preview.png" />
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://leandro-benedet-garcia.github.io{{ page.permalink }}" />
-  <meta property="twitter:title" content="{{ page.title }}" />
-  <meta property="twitter:description" content="{{ page.description }}" />
-  <meta property="twitter:image" content="https://leandro-benedet-garcia.github.io/assets/images/x_preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://leandro-benedet-garcia.github.io{{ page.permalink }}" />
+  <meta name="twitter:title" content="{{ site.title }}" />
+  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta name="twitter:image" content="https://leandro-benedet-garcia.github.io/assets/images/x_preview.png" />
 
   <!-- Bootstrap core CSS -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -40,14 +44,14 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfilePage",
+  "@type": "WebPage",
   "url": "https://leandro-benedet-garcia.github.io{{ page.permalink }}",
   "mainEntity": {
     "@type": "Person",
     "@id": "https://leandro-benedet-garcia.github.io/#person",
     "name": "Leandro Benedet Garcia",
     "jobTitle": "Senior Gameplay Engineer",
-    "description": "{{ page.description }}",
+    "description": "{{ site.description }}",
     "url": "https://leandro-benedet-garcia.github.io/",
     "sameAs": [
       "https://github.com/leandro-benedet-garcia",
