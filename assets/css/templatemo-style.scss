@@ -45,9 +45,12 @@ textarea {
   outline: none;
 }
 
-a,
-a:hover {
-  text-decoration: none;
+a {
+  color: rgb(98, 161, 255);
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 h4 {
@@ -355,7 +358,7 @@ button:hover {
   background-color: var(--default-background);
   margin-bottom: 30px;
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 0px;
   }
 
@@ -365,12 +368,15 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .single-column {
+    max-width: 45%;
+    margin: 2.5%;
+  }
+}
 
 .single-column {
-  max-width: 45%;
-  margin: 2.5%;
-
-  &:last-child{
+  &:last-child {
     margin-bottom: 30px;
   }
 
@@ -383,14 +389,7 @@ section.my-work .section-heading {
   text-align: center;
 }
 
-@media screen and (max-width: 1680px) {
-  .section {
-    color: #fff;
-  }
-}
-
 @media screen and (max-width: 1280px) {
-
   .right-image-post h4,
   .left-image-post h4 {
     margin-top: 0px;
