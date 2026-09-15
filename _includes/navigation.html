@@ -8,29 +8,21 @@
     <div class="author-content">
       <h1>Leandro Benedet Garcia</h1>
     </div>
-    <nav class="main-nav" role="navigation">
-      <ul class="main-menu">
-        <li><a href="/index.html#about-me">Home Page</a></li>
-        <li><a href="/terms_of_service.html#terms">Terms of Service</a></li>
+    <nav>
+      <div class="main-nav">
+        <a href="/index.html#about-me">Home Page</a>
+        <a href="/terms_of_service.html#terms">Terms of Service</a>
         {% for cat_hash in site.data.works %}
         {% assign curr_category = cat_hash[1] %}
-        <li><a href="/index.html#{{ curr_category.id }}">{{ curr_category.title }}</a></li>
+        <a href="/index.html#{{ curr_category.id }}">{{ curr_category.title }}</a>
         {% endfor %}
-        <li><a href="/index.html#general-skills">Technical Expertise</a></li>
-        <li><a href="/index.html#pricing">Pricing</a></li>
-      </ul>
+        <a href="/index.html#general-skills">Technical Expertise</a>
+        <a href="/index.html#pricing">Pricing and Contact</a>
+      </div>
       <div class="social-network">
-        <ul class="social-icons">
-          <li>
-            <a href="https://github.com/leandro-benedet-garcia"><i class="fa fa-github"></i>GitHub</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/leandrobgarcia/"><i class="fa fa-linkedin"></i>LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://codeberg.org/cerberus1746"><img alt="Codeberg Logo" src="/assets/images/icons/codeberg.svg" />Codeberg</a>
-          </li>
-        </ul>
+        <a href="https://github.com/leandro-benedet-garcia"><i class="fa fa-github"></i>GitHub</a>
+        <a href="https://www.linkedin.com/in/leandrobgarcia/"><i class="fa fa-linkedin"></i>LinkedIn</a>
+        <a href="https://codeberg.org/cerberus1746"><img alt="Codeberg Logo" src="/assets/images/icons/codeberg.svg" />Codeberg</a>
       </div>
     </nav>
     <div class="copyright-text">

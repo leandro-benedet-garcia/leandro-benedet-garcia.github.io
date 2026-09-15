@@ -37,7 +37,7 @@ layout: page
     {% if curr_work.imagebar %}
     <div class="work row" data-section="{{ curr_work.id }}">
       {% if curr_work.highlight_video %}
-      <video controls muted loop width="100%">
+      <video controls muted loop style="width:100%;">
         <source src="{{ curr_work.highlight_video }}" type="video/mp4" />
       </video>
       {% endif %}
@@ -46,7 +46,7 @@ layout: page
         <img class="cover" alt="Cover image for {{ curr_work.title }}" src="{{ curr_work.cover }}" />
         {% endif %}
         {% for curr_video in curr_work.imagebar.videos %}
-        <video {% if curr_video.autoplay %} autoplay {%endif%} loop muted width="100%">
+        <video {% if curr_video.autoplay %} autoplay {%endif%} loop muted style="width:100%;">
           <source src="{{ curr_video.url }}" type="video/webm; codecs=vp9">
         </video>
         {% endfor %}
@@ -54,10 +54,10 @@ layout: page
         <img alt="Image for {{ curr_work.title }}" src="{{ curr_image }}" />
         {% endfor %}
       </div>
-      <div class="description col-md-6">
+      <div class="col-md-6">
         {% else %}
         <div class="work col-md-6 single-column" data-section="{{ curr_work.id }}">
-          <div class="description">
+          <div>
             {% if curr_work.cover %}
             <img class="cover" alt="Cover image for {{ curr_work.title }}" src="{{ curr_work.cover }}" />
             {% endif %}
@@ -120,75 +120,67 @@ layout: page
     </div>
     <div class="row">
       <div class="col-sm-6 work single-column">
-        <div class="description">
-          <img alt="Godot Logo" class="cover" src="/assets/images/icons/godot.svg" />
-          <h3>Godot Game Engine</h3>
-          <div>
-            Professional Experience:
-            <ul>
-              <li>3 Years of Work Experience</li>
-              <li>Contributor with several merged <a href="https://github.com/search?q=org%3Agodotengine%20author%3Aleandro-benedet-garcia%20is%3Apr%20is%3Amerged&type=pullrequests">Pull Requests</a></li>
-              <li>Multiplayer experience with built-in networking capabilities.</li>
-              <li>Gameplay and game systems development</li>
-              <li>C#, GDscript, C++ (with GdExtensions and modules)</li>
-              <li>Performance optimization with built-in profilers and custom game engine builds.</li>
-              <li>AI and procedural systems</li>
-            </ul>
-          </div>
+        <img alt="Godot Logo" class="cover" src="/assets/images/icons/godot.svg" />
+        <h3>Godot Game Engine</h3>
+        <div>
+          Professional Experience:
+          <ul>
+            <li>3 Years of Work Experience</li>
+            <li>Contributor with several merged <a href="https://github.com/search?q=org%3Agodotengine%20author%3Aleandro-benedet-garcia%20is%3Apr%20is%3Amerged&type=pullrequests">Pull Requests</a></li>
+            <li>Multiplayer experience with built-in networking capabilities.</li>
+            <li>Gameplay and game systems development</li>
+            <li>C#, GDscript, C++ (with GdExtensions and modules)</li>
+            <li>Performance optimization with built-in profilers and custom game engine builds.</li>
+            <li>AI and procedural systems</li>
+          </ul>
         </div>
       </div>
 
       <div class="col-sm-6 work single-column">
-        <div class="description">
-          <img alt="Unity Logo" class="cover" src="/assets/images/icons/unity.svg" />
-          <h3>Unity Game Engine</h3>
-          <div>
-            Professional Experience:
-            <ul>
-              <li>6 Years of Work Experience</li>
-              <li>Gameplay and game systems development</li>
-              <li>Multiplayer Photon, Fish.net or Netcode for GameObjects</li>
-              <li>VR with Meta Quest 2</li>
-              <li>AI and procedural systems</li>
-            </ul>
-          </div>
+        <img alt="Unity Logo" class="cover" src="/assets/images/icons/unity.svg" />
+        <h3>Unity Game Engine</h3>
+        <div>
+          Professional Experience:
+          <ul>
+            <li>6 Years of Work Experience</li>
+            <li>Gameplay and game systems development</li>
+            <li>Multiplayer Photon, Fish.net or Netcode for GameObjects</li>
+            <li>VR with Meta Quest 2</li>
+            <li>AI and procedural systems</li>
+          </ul>
         </div>
       </div>
 
       <div class="col-sm-6 work single-column">
-        <div class="description">
-          <img alt="Docker Logo" class="cover" src="/assets/images/icons/docker.svg" />
-          <h3>Docker</h3>
-          <div>
-            Professional Experience:
-            <ul>
-              <li>10 Years of Work Experience</li>
-              <li>Used for implementation of dedicated game servers and self hosting</li>
-              <li>Unit testing</li>
-              <li>Creation of automated builds</li>
-              <li>Creation of dedicated servers</li>
-              <li>VR with Oculus Quest 2 (they were not called Meta Quest 2 at the time)</li>
-              <li>Authoritative dedicated servers</li>
-              <li>Server/database integration</li>
-            </ul>
-          </div>
+        <img alt="Docker Logo" class="cover" src="/assets/images/icons/docker.svg" />
+        <h3>Docker</h3>
+        <div>
+          Professional Experience:
+          <ul>
+            <li>10 Years of Work Experience</li>
+            <li>Used for implementation of dedicated game servers and self hosting</li>
+            <li>Unit testing</li>
+            <li>Creation of automated builds</li>
+            <li>Creation of dedicated servers</li>
+            <li>VR with Oculus Quest 2 (they were not called Meta Quest 2 at the time)</li>
+            <li>Authoritative dedicated servers</li>
+            <li>Server/database integration</li>
+          </ul>
         </div>
       </div>
 
       <div class="col-sm-6 work single-column">
-        <div class="description">
-          <div class="service-icon">
-            <img alt="GitHub Logo" class="cover" src="/assets/images/icons/github.svg" />
-          </div>
-          <h3>GitHub</h3>
-          <div>
-            Professional Experience:
-            <ul>
-              <li>Unit testing.</li>
-              <li>Creation of GitHub Actions for automated builds targeting virtually any platform.</li>
-              <li>Team repository management.</li>
-            </ul>
-          </div>
+        <div class="service-icon">
+          <img alt="GitHub Logo" class="cover" src="/assets/images/icons/github.svg" />
+        </div>
+        <h3>GitHub</h3>
+        <div>
+          Professional Experience:
+          <ul>
+            <li>Unit testing.</li>
+            <li>Creation of GitHub Actions for automated builds targeting virtually any platform.</li>
+            <li>Team repository management.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -198,66 +190,50 @@ layout: page
 <section class="section my-work" data-section="pricing">
   <div class="container">
     <div class="section-heading">
-      <h2>Pricing</h2>
-      <span>How much for my work? Also, make sure to read my <a href="terms_of_service.html">Terms of
-          Service</a></span>
+      <h2>Pricing and Contact</h2>
+      <div class="line-dec"></div>
     </div>
   </div>
   <div class="row">
     <div class="work col-md-6 single-column">
-      <div class="description">
-        <p>
-          Details about my pricing for contracts can be read in my <a href="terms_of_service.html">Terms of Service</a> page.
-        </p>
+      <h3>Contact</h3>
+      <p>Need a programmer for a new game, a project, or a difficult technical problem?</p>
+      <p>I work with Unity and Godot on gameplay systems, AI, physics, networking, VR, procedural systems, performance optimization, and technical implementation.</p>
+      <p>I am available for freelance and contract work, including short-term technical tasks and longer-term project support.</p>
+      <h3>Tell me about your project</h3>
+      <p>When contacting me, please include:</p>
+      <ul>
+        <li><b>Project</b>: What are you making?</li>
+        <li><b>Engine</b>: Unity, Godot, or another technology?</li>
+        <li><b>What you need</b>: What would you like me to implement, fix, or review?</li>
+        <li><b>Current state</b>: Prototype, existing project, production, etc.</li>
+        <li><b>Timeline</b>: When do you need the work?</li>
+        <li><b>Budget</b>: Approximate budget or preferred rate, if already defined.</li>
+      </ul>
+      <h4>Contact methods</h4>
+      <ul>
+        <li><b>Email</b>: <a href="mailto:leandro.benedet.garcia@gmail.com">leandro.benedet.garcia@gmail.com</a></li>
+        <li><b>Discord</b>: Cerberus1746</li>
+        <li><b>GitHub</b>: <a href="https://github.com/leandro-benedet-garcia/">github.com/leandro-benedet-garcia</a></li>
+        <li><b>LinkedIn</b>: <a href="www.linkedin.com/in/leandrobgarcia/">linkedin.com/in/leandrobgarcia/</a></li>
+      </ul>
+    </div>
+    <div class="work col-md-6 single-column">
+      <h3>Pricing</h3>
+      <p>
+        Details about my pricing for contracts can be read in my <a href="terms_of_service.html">Terms of Service</a> page.
+      </p>
 
-        <h2>Preferred payment methods</h2>
-        <ul>
-          <li>Paypal.</li>
-          <li>CashApp.</li>
-          <li>Bank Transfer (Direct deposit or international transfer).</li>
-        </ul>
-        <h2>Payment period</h2>
-        <p>
-          My preferred payment period is weekly or biweekly. But regular montly payment period is fine too.
-        </p>
-      </div>
+      <h2>Preferred payment methods</h2>
+      <ul>
+        <li>Paypal.</li>
+        <li>CashApp.</li>
+        <li>Bank Transfer (Direct deposit or international transfer).</li>
+      </ul>
+      <h2>Payment period</h2>
+      <p>
+        My preferred payment period is weekly or biweekly. But regular montly payment period is fine too.
+      </p>
     </div>
   </div>
-</section>
-
-<section class="section contact-me">
-  <div class="container">
-    <div class="section-heading">
-      <h2>Contact</h2>
-      <div class="line-dec"></div>
-    </div>
-    <div class="row">
-      <div class="work col-md-6 single-column">
-        <div class="description">
-          <p>Need a programmer for a new game, a project, or a difficult technical problem?</p>
-          <p>I work with Unity and Godot on gameplay systems, AI, physics, networking, VR, procedural systems, performance optimization, and technical implementation.</p>
-          <p>I am available for freelance and contract work, including short-term technical tasks and longer-term project support.</p>
-          <h3>Tell me about your project</h3>
-          <p>When contacting me, please include:</p>
-          <ul>
-            <li><b>Project</b>: What are you making?</li>
-            <li><b>Engine</b>: Unity, Godot, or another technology?</li>
-            <li><b>What you need</b>: What would you like me to implement, fix, or review?</li>
-            <li><b>Current state</b>: Prototype, existing project, production, etc.</li>
-            <li><b>Timeline</b>: When do you need the work?</li>
-            <li><b>Budget</b>: Approximate budget or preferred rate, if already defined.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="work col-md-6 single-column">
-        <div class="description">
-          <ul>
-            <li><b>Email</b>: <a href="mailto:leandro.benedet.garcia@gmail.com">leandro.benedet.garcia@gmail.com</a></li>
-            <li><b>Discord</b>: Cerberus1746</li>
-            <li><b>GitHub</b>: <a href="https://github.com/leandro-benedet-garcia/">github.com/leandro-benedet-garcia</a></li>
-            <li><b>LinkedIn</b>: <a href="www.linkedin.com/in/leandrobgarcia/"></href>linkedin.com/in/leandrobgarcia/</li>
-          </ul>
-        </div>
-      </div>
-    </div>
 </section>
