@@ -35,18 +35,6 @@
         "Maintained existing codebase by fixing bugs.",
         "Created an interactive tutorial on how the showcase worked, focused on people that never used VR before."
       ]
-    },
-    {
-      "id": "physics-procedural",
-      "title": "Physics and Procedural Game",
-      "role": "Developer",
-      "objective": "Create a 2D game from scratch with procedural level generation and a physics-based character controller.",
-      "subtitle": "What I did in the project",
-      "work_done": [
-        "Worked on pathfinding of a flying enemy controlled by physics.",
-        "Created a physics-based flying character controller.",
-        "Created a procedural level generator utilizing TileMapLayers."
-      ]
     }
   ]
 }

@@ -79,6 +79,38 @@
           "name": "Apple APP Store"
         }
       ]
+    },
+    {
+      "id": "bouncy-balloonist",
+      "title": "Bouncy Balloonist",
+      "client": {
+        "name": "Sakura Swirl",
+        "url": "https://x.com/SakuraSwirl_128"
+      },
+      "cover": "/assets/images/games/bouncy_balloonist/level.webp",
+      "imagebar": {
+        "videos": [
+          {
+            "url": "/assets/images/games/bouncy_balloonist/video.mp4",
+            "autoplay": true
+          },
+          {
+            "url": "/assets/images/games/bouncy_balloonist/video_enemy.mp4",
+            "autoplay": true
+          }
+        ]
+      },
+      "role": "Developer",
+      "objective": "Create a 2D game from scratch with procedural level generation and a physics-based character controller.",
+      "subtitle": "What I did in the project",
+      "work_done": [
+        "Worked on pathfinding of a physics based flying enemy.",
+        "Created a physics-based flying character controller.",
+        "Created a procedural level generator utilizing TileMapLayers.",
+        "Added Sound Effects",
+        "Created UI.",
+        "Worked on game design."
+      ]
     }
   ]
 }
