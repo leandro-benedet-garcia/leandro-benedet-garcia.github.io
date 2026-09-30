@@ -74,7 +74,7 @@
           "name": "Itch.io"
         },
         {
-          "url": "https://apps.apple.com/br/app/slutty-bass/id6763365051",
+          "url": "https://apps.apple.com/app/slutty-bass/id6763365051",
           "icon": "/assets/images/icons/appstore.svg",
           "name": "Apple APP Store"
         }
@@ -91,11 +91,11 @@
       "imagebar": {
         "videos": [
           {
-            "url": "/assets/images/games/bouncy_balloonist/video.mp4",
+            "url": "/assets/images/games/bouncy_balloonist/video.webm",
             "autoplay": true
           },
           {
-            "url": "/assets/images/games/bouncy_balloonist/video_enemy.mp4",
+            "url": "/assets/images/games/bouncy_balloonist/video_enemy.webm",
             "autoplay": true
           }
         ]
