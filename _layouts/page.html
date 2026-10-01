@@ -57,7 +57,7 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "url": "{{ page.url | absolute_url }}",
+    "url": "{{ '/' | absolute_url }}",
     "mainEntity": {
       "@type": "Person",
       "@id": "{{ '/' | absolute_url }}#person",
@@ -65,6 +65,7 @@
       "jobTitle": "Senior Gameplay Engineer",
       "description": "{{ page.description | default: site.description | escape }}",
       "url": "{{ '/' | absolute_url }}",
+      "email": "leandro.benedet.garcia@gmail.com",
       "sameAs": [
         "https://github.com/leandro-benedet-garcia",
         "https://www.linkedin.com/in/leandrobgarcia/",
@@ -99,7 +100,8 @@
         "C# Scripting",
         "C++ Core Engine Systems",
         "GDScript Prototyping",
-        "Docker Containerization"
+        "Docker Containerization",
+        "Internationalization and localization to Portuguese (Brazilian)"
       ],
       "seeks": {
         "@type": "Demand",
@@ -112,19 +114,31 @@
           "@type": "CreativeWork",
           "name": "Exosky - 3D Flight Simulator",
           "description": "Lead developer for a 3D flight simulator utilizing optimized, custom aerodynamics equations to run smoothly at over 60 FPS on 4th-gen i5 hardware.",
-          "keywords": "Unity, C#, Flight Simulation, Optimization"
+          "keywords": "unity, c#, flight simulation, optimization"
         },
         {
           "@type": "CreativeWork",
           "name": "Multiplayer Building Game",
           "description": "Engineered a custom server-authoritative multiplayer sandbox structure using Godot dedicated server nodes and network replication.",
-          "keywords": "Godot, Dedicated Server, Netcode, Multiplayer"
+          "keywords": "godot, dedicated server, netcode, multiplayer"
         },
         {
           "@type": "CreativeWork",
           "name": "Slutty Bass",
           "description": "2D platformer using state machine mechanics and modular AI architectures.",
-          "keywords": "Unity, C#, Platformer"
+          "keywords": "unity, c#, platformer"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Bouncy Balloonist",
+          "description": "A cute and colorful 2D arena platformer about popping balloons!.",
+          "keywords": "godot, c#, platformer, physics, physics based"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Iron Lung (Movie)",
+          "description": "Horror movie based on the 2022 video game by David Szymanski",
+          "keywords": "movie, markiplier, internationalization"
         }
       ]
     }

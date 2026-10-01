@@ -110,6 +110,13 @@
         "Added Sound Effects",
         "Created UI.",
         "Worked on game design."
+      ],
+      "where_to_play": [
+        {
+          "url": "https://store.steampowered.com/app/4861770/Bouncy_Balloonist/",
+          "icon": "/assets/images/icons/steam.svg",
+          "name": "Steam"
+        }
       ]
     }
   ]
