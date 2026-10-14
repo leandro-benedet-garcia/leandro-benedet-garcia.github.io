@@ -14,15 +14,18 @@
         <a href="/terms_of_service.html#terms">Terms of Service</a>
         {% for cat_hash in site.data.works %}
         {% assign curr_category = cat_hash[1] %}
+        {% if curr_category.main_menu %}
         <a href="/index.html#{{ curr_category.id }}">{{ curr_category.title }}</a>
+        {% endif %}
         {% endfor %}
         <a href="/index.html#general-skills">Technical Expertise</a>
         <a href="/index.html#pricing">Pricing and Contact</a>
       </div>
       <div class="social-network">
         <a href="https://github.com/leandro-benedet-garcia"><i class="fa fa-github"></i>GitHub</a>
+        <a href="https://codeberg.org/cerberus1746"><img alt="Codeberg Logo" src="/assets/images/icons/codeberg.svg" />Codeberg</a><br />
         <a href="https://www.linkedin.com/in/leandrobgarcia/"><i class="fa fa-linkedin"></i>LinkedIn</a>
-        <a href="https://codeberg.org/cerberus1746"><img alt="Codeberg Logo" src="/assets/images/icons/codeberg.svg" />Codeberg</a>
+        <a href="https://bsky.app/profile/cerberus1746.bsky.social"><img alt="Bluesky Logo" src="/assets/images/icons/bluesky.svg" />Bluesky</a>
       </div>
     </nav>
     <div class="copyright-text">

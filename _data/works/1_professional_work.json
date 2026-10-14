@@ -3,6 +3,7 @@
   "title": "Gameplay Engineering",
   "description": "Projects that I worked on for clients as a contractor and launched by them",
   "single_column": false,
+  "main_menu": true,
   "items": [
     {
       "id": "exosky",

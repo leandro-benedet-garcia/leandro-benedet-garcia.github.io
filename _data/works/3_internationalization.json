@@ -3,17 +3,18 @@
   "single_column": false,
   "title": "Internationalization Projects",
   "description": "Projects that I worked on doing the internationalization to Portuguese (Brazil).",
+  "main_menu": true,
   "items": [
     {
       "id": "iron-lung",
       "title": "Iron Lung (Movie)",
       "cover": "/assets/images/movie/iron-lung/cover.jpg",
+      "verb": "Watch",
       "client": {
         "name": "Markiplier",
         "url": "https://www.youtube.com/@markiplier"
       },
-      "imagebar": {
-      },
+      "imagebar": {},
       "role": "Translator",
       "subtitle": "What I did in the project",
       "work_done": [
