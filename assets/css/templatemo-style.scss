@@ -28,6 +28,32 @@ ul {
   padding-left: 1rem;
 }
 
+blockquote {
+  color: rgba(250, 200, 130, 0.6);
+  font-family: Tahoma, sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+
+  p {
+    font-style: italic;
+    margin-bottom: 0px;
+
+    &::before {
+      content: "“";
+      font-family: Georgia;
+      font-size: 65px;
+      position: absolute;
+      opacity: 0.5;
+    }
+
+    &::before {
+      top: -25px;
+      left: -35px;
+    }
+  }
+}
+
 #page-wraper {
   background-color: black;
   width: 100%;
