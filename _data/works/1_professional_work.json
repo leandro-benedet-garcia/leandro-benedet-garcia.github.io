@@ -65,19 +65,13 @@
         "Managed the git repository and reviewed code from 5 other programmers to ensure code quality was maintained and functional.",
         "Managed and reviewed tasks related to coding.",
         "Created AI for bosses and enemies.",
-        "Imported and implemented animations made by artists.",
-        "Created an iPhone build without a Mac device, created purely with GitHub Actions using Fastly (to handle code signage) and the MacOs hosted runner."
+        "Imported and implemented animations made by artists."
       ],
       "where_to_play": [
         {
           "url": "https://sluttybass.itch.io/slutty-bass",
           "icon": "/assets/images/icons/itchio.svg",
           "name": "Itch.io"
-        },
-        {
-          "url": "https://apps.apple.com/app/slutty-bass/id6763365051",
-          "icon": "/assets/images/icons/appstore.svg",
-          "name": "Apple APP Store"
         }
       ]
     },
